@@ -8,9 +8,9 @@ export function Steps(): JSX.Element {
             case 'done':
                 return 'bg-solid-quaternary';
             case 'current':
-                return 'bg-solid-tertiary';
+                return 'bg-solid-tertiary cursor-pointer';
             case 'next':
-                return 'bg-white border-2 border-surface-tertiary';
+                return 'bg-white border-2 border-surface-tertiary cursor-pointer';
         }
     };
 
@@ -60,7 +60,7 @@ export function Steps(): JSX.Element {
                                 </div>
                             </div>
                             <p
-                                className={`text-primary text-center ${
+                                className={`text-primary text-center cursor-pointer ${
                                     step.status === 'current' ? 'font-bold' : ''
                                 }`}
                             >
