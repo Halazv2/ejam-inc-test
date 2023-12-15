@@ -147,7 +147,7 @@ export function ProductInfo() {
                 </div>
                 {/* reject */}
                 <div className="flex justify-center items-center">
-                    <span className="text-danger text-title underline">
+                    <span className="text-danger text-title underline cursor-pointer">
                         No thanks, I don’t want this.
                     </span>
                 </div>
