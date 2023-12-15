@@ -4,8 +4,6 @@ import ScrollLeftIcon from '@assets/icons/scroll-left.svg';
 import ScrollRightIcon from '@assets/icons/scroll-right.svg';
 import { IHeaderItem } from '@/types/interfaces';
 
-import '@styles/Carousel.css';
-
 export default function Carousel({ slides }: { slides: IHeaderItem[] }) {
     let [current, setCurrent] = useState(0);
 

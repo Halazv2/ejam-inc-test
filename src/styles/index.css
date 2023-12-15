@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import './prism.css';
 @import 'tailwindcss/utilities';
+@import './Carousel.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap');
 
@@ -16,9 +17,9 @@
         --text-validation-error: #d32f2f;
         --text-validation-success: #5bb59a;
         --text-validation-warning: #f57c00;
-        --text-danger: #F82C2C;
+        --text-danger: #f82c2c;
         --text-muted: #969696;
-        --text-muted-dark: #4D5254;
+        --text-muted-dark: #4d5254;
 
         --bg-accent-default: rgba(0, 95, 184, 1);
         --bg-accent-disabled: rgba(0, 0, 0, 0.36);
@@ -27,10 +28,10 @@
         --bg-solid-secondary: #fafafa;
         --bg-solid-tertiary: #2c7ef8;
         --bg-solid-quaternary: #85bf55;
-        --bg-solid-quinary: #59AE43;
+        --bg-solid-quinary: #59ae43;
         --bg-solid-senary: #696969;
 
-        --bg-light-tertiary: #EDF3FD;
+        --bg-light-tertiary: #edf3fd;
 
         --bg-subtle-secondary: rgba(0, 0, 0, 0.04);
         --bg-subtle-tertiary: rgba(0, 0, 0, 0.02);
