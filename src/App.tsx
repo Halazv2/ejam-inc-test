@@ -1,9 +1,18 @@
+import RootLayout from './layouts';
+import { Steps } from '@components/Steps';
+import { Product } from '@components/Product';
+import { ProductMobile } from '@components/ProductMobile';
+
 function App() {
-  return (
-    <>
-      <h1 className='text-3xl font-bold underline'>Hello world!</h1>
-    </>
-  );
+    return (
+        <RootLayout>
+            <div className="flex flex-col items-center justify-center min-h-screen lg:gap-10 gap-4">
+                <Steps />
+                <Product />
+                <ProductMobile />
+            </div>
+        </RootLayout>
+    );
 }
 
 export default App;
