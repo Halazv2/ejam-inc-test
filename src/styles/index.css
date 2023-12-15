@@ -2,3 +2,118 @@
 @import 'tailwindcss/components';
 @import './prism.css';
 @import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap');
+
+@layer base {
+    :root {
+        color-scheme: light dark;
+
+        --text-primary: rgba(0, 0, 0, 0.9);
+        --text-secondary: rgba(0, 0, 0, 0.61);
+        --text-tertiary: #2c7ef8;
+        --text-disabled: rgba(0, 0, 0, 0.36);
+        --text-validation-error: #d32f2f;
+        --text-validation-success: #5bb59a;
+        --text-validation-warning: #f57c00;
+        --text-danger: #F82C2C;
+        --text-muted: #969696;
+        --text-muted-dark: #4D5254;
+
+        --bg-accent-default: rgba(0, 95, 184, 1);
+        --bg-accent-disabled: rgba(0, 0, 0, 0.36);
+
+        --bg-solid-primary: #252f3d;
+        --bg-solid-secondary: #fafafa;
+        --bg-solid-tertiary: #2c7ef8;
+        --bg-solid-quaternary: #85bf55;
+        --bg-solid-quinary: #59AE43;
+        --bg-solid-senary: #696969;
+
+        --bg-light-tertiary: #EDF3FD;
+
+        --bg-subtle-secondary: rgba(0, 0, 0, 0.04);
+        --bg-subtle-tertiary: rgba(0, 0, 0, 0.02);
+
+        --bg-control-default: rgba(255, 255, 255, 0.7);
+
+        --bg-mica: #f3f3f3;
+        --gradient-mica: rgba(243, 243, 243, 0.5);
+
+        --bg-acrylic-default: rgba(252, 252, 252, 0.85);
+        --bg-acrylic-base: rgba(255, 255, 255, 0.9);
+        --blend-acrylic: normal, luminosity;
+
+        --border-surface-tertiary: #2c7ef8;
+        --border-surface-default: rgba(117, 117, 117, 0.4);
+        --border-surface-flyout: rgba(0, 0, 0, 0.06);
+        --border-card-default: rgba(0, 0, 0, 0.06);
+
+        --shadow-tooltip: 0px 4px 8px rgba(0, 0, 0, 0.14);
+        --shadow-flyout: 0px 8px 16px rgba(0, 0, 0, 0.14);
+    }
+
+    .dark {
+        color-scheme: dark;
+
+        --text-primary: #ffffff;
+        --text-secondary: rgba(255, 255, 255, 0.79);
+        --text-tertiary: rgba(255, 255, 255, 0.54);
+        --text-disabled: rgba(255, 255, 255, 0.36);
+
+        --bg-accent-default: rgba(96, 205, 255, 1);
+        --bg-accent-disabled: rgba(255, 255, 255, 0.36);
+
+        --bg-solid-primary: #202020;
+        --bg-solid-secondary: #1c1c1c;
+        --bg-solid-tertiary: #282828;
+        --bg-solid-quaternary: #2c2c2c;
+
+        --bg-subtle-secondary: rgba(255, 255, 255, 0.06);
+        --bg-subtle-tertiary: rgba(255, 255, 255, 0.04);
+
+        --bg-control-default: rgba(255, 255, 255, 0.06);
+
+        --bg-mica: #202020;
+        --gradient-mica: rgba(32, 32, 32, 0.8);
+
+        --bg-acrylic-default: linear-gradient(
+                0deg,
+                rgba(44, 44, 44, 0.15),
+                rgba(44, 44, 44, 0.15)
+            ),
+            rgba(44, 44, 44, 0.96);
+        --bg-acrylic-base: linear-gradient(
+                0deg,
+                rgba(32, 32, 32, 0.5),
+                rgba(32, 32, 32, 0.5)
+            ),
+            rgba(0, 0, 0, 0.66);
+        --blend-acrylic: normal, color, luminosity;
+
+        --border-surface-default: rgba(117, 117, 117, 0.4);
+        --border-surface-flyout: rgba(0, 0, 0, 0.2);
+        --border-card-default: rgba(0, 0, 0, 0.1);
+
+        --shadow-tooltip: 0px 4px 8px rgba(0, 0, 0, 0.26);
+        --shadow-flyout: 0px 8px 16px rgba(0, 0, 0, 0.14);
+    }
+}
+
+@layer utilities {
+    .bg-mica {
+        background: linear-gradient(to top, var(--gradient-mica), var(--gradient-mica)),
+            var(--bg-mica);
+        background-blend-mode: color, luminosity;
+    }
+
+    .bg-acrylic {
+        background: url(/assets/noise-256.png), var(--bg-acrylic-default);
+        background-blend-mode: var(--blend-acrylic);
+    }
+
+    .bg-acrylic-base {
+        background: url(/assets/noise-256.png), var(--bg-acrylic-base);
+        background-blend-mode: var(--blend-acrylic);
+    }
+}

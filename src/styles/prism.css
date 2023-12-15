@@ -1,48 +1,61 @@
 pre[class*='language-'] {
     color: theme('colors.zinc.100');
-  }
-  
-  .token.tag,
-  .token.class-name,
-  .token.selector,
-  .token.selector .class,
-  .token.selector.class,
-  .token.function {
+}
+
+.token.tag,
+.token.class-name,
+.token.selector,
+.token.selector .class,
+.token.selector.class,
+.token.function {
     color: theme('colors.pink.400');
-  }
-  
-  .token.attr-name,
-  .token.keyword,
-  .token.rule,
-  .token.pseudo-class,
-  .token.important {
+}
+
+.token.attr-name,
+.token.keyword,
+.token.rule,
+.token.pseudo-class,
+.token.important {
     color: theme('colors.zinc.300');
-  }
-  
-  .token.module {
+}
+
+.token.module {
     color: theme('colors.pink.400');
-  }
-  
-  .token.attr-value,
-  .token.class,
-  .token.string,
-  .token.property {
+}
+
+.token.attr-value,
+.token.class,
+.token.string,
+.token.property {
     color: theme('colors.teal.300');
-  }
-  
-  .token.punctuation,
-  .token.attr-equals {
+}
+
+.token.punctuation,
+.token.attr-equals {
     color: theme('colors.zinc.500');
-  }
-  
-  .token.unit,
-  .language-css .token.function {
+}
+
+.token.unit,
+.language-css .token.function {
     color: theme('colors.sky.200');
-  }
-  
-  .token.comment,
-  .token.operator,
-  .token.combinator {
+}
+
+.token.comment,
+.token.operator,
+.token.combinator {
     color: theme('colors.zinc.400');
-  }
-  
+}
+
+.button-with-hover-effect {
+    position: relative;
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease; /* You can adjust the duration and timing function according to your preference */
+}
+
+.button-with-hover-effect:hover .arrow-icon {
+    transform: translateX(
+        5px
+    ); /* Adjust the value based on how much you want the arrow to move to the right */
+}
