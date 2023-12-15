@@ -1,0 +1,11 @@
+.carousel-container {
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.transition-transform {
+    transition-property: transform;
+}
