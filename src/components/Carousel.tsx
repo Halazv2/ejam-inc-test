@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import ScrollLeftIcon from '@assets/icons/scroll-left.svg';
 import ScrollRightIcon from '@assets/icons/scroll-right.svg';
-import { IHeaderItem } from '@types/interfaces';
+import { IHeaderItem } from '@/types/interfaces';
 
 import '@styles/Carousel.css';
 

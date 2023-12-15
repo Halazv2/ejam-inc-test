@@ -1,4 +1,4 @@
-import { IHeaderItem, IStep } from '@types/interfaces';
+import { IHeaderItem, IStep } from '@/types/interfaces';
 import GuaranteeIcon from '@assets/icons/guarantee.svg';
 import DeliveryIcon from '@assets/icons/delivery.svg';
 import HeartIcon from '@assets/icons/heart.svg';

@@ -27,11 +27,13 @@
             "@styles/*": ["./styles/*"],
             "@utils/*": ["./utils/*"],
             "@hooks/*": ["./hooks/*"],
-            "@types/*": ["./types/*"],
+            "@/types/*": ["./types/*"],
             "@helpers/*": ["./helpers/*"],
             "@layouts/*": ["./layouts/*"]
-        }
+        },
+        "typeRoots": ["node_modules/@types", "src/types"]
     },
-    "include": ["src"],
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }

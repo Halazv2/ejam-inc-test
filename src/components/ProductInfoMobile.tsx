@@ -38,7 +38,7 @@ export function ProductInfoMobile() {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, [width]);
     const description =
         'Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.';
 
@@ -120,7 +120,7 @@ export function ProductInfoMobile() {
                     <div>
                         {/* description */}
                         <p className="text-muted-dark text-center text-caption">
-                            description
+                            {description}
                         </p>
                     </div>
                 )}
