@@ -114,9 +114,9 @@ export function ProductInfo() {
 
             <div className="flex flex-col">
                 {/* button */}
-                <button className="flex justify-center items-center gap-2 mb-3 bg-solid-quinary rounded-full py-4 px-8 text-white font-bold w-full">
-                    <span>ADD TO CART</span>
-                    <img src={ArrowIcon} alt="arrow" />
+                <button className="flex justify-center items-center uppercase gap-2 mb-3 bg-solid-quinary rounded-full py-3 px-5 text-white font-medium w-full button-with-hover-effect">
+                    <span>Yes - Claim my discount</span>
+                    <img src={ArrowIcon} alt="arrow" className="arrow-icon" />
                 </button>
                 {/* shipping */}
                 <div className="flex justify-center items-center gap-2 text-senary text-caption border border-zinc-300 p-1 rounded mb-3 flex-wrap">
